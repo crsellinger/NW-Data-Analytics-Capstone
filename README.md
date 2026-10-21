@@ -15,7 +15,7 @@
 ### Validation/Results
 - Summary of analysis
 
-### Limtiations/Restrictions
+### Limitations/Restrictions
 - Identify system issues/obstacles
 - Possible solutions
 - Possibly any development obstacles?
