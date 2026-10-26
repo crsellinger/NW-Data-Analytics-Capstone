@@ -1,0 +1,243 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.20 of 2017/10/04
+%
+\documentclass[runningheads]{llncs}
+%
+\usepackage{graphicx}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following line
+% to display URLs in blue roman font according to Springer's eBook style:
+% \renewcommand\UrlFont{\color{blue}\rmfamily}
+
+\begin{document}
+%
+\title{Anaylizing Historical Stock Data using Machine Learning for Dummies}
+%
+%\titlerunning{Abbreviated paper title}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{Caleb R. Sellinger}
+%
+\authorrunning{C. Sellinger}
+% First names are abbreviated in the running head.
+% If there are more than two authors, 'et al.' is used.
+%
+\institute{Northwest Missouri State University, Maryville MO 64468, USA \\
+\email{S577274@nwmissouri.edu}}
+%
+\maketitle              % typeset the header of the contribution
+%
+\begin{abstract}
+The abstract should briefly summarize the contents of the paper in
+150--250 words. The abstract should briefly summarize the contents of the paper in
+150--250 words. The abstract should briefly summarize the contents of the paper in
+150--250 words. The abstract should briefly summarize the contents of the paper in
+150--250 words.
+
+\keywords{stock market \and machine learning \and data analysis \and predictive modeling}
+\end{abstract}
+%
+%
+%
+\section{Introduction}
+
+I am going to analyze historical stock data in order to more easily make decisions within
+the stock market for personal investment accounts.
+
+I plan to source data from YahooFinance via a web scraper, extracting and storing it in a
+file to use for analysis.
+
+The stock market is a very complex system. There is a lot of business terminology and acumen
+that makes it difficult for the average person to make sound financial decisions that effectively
+invest in there future. Therefore, my goal is to provide create a project that makes it more
+approachable. Possible ideas are giving each stock a score or returning top X stocks based on the
+strategy the individual wants use (dividend investment, stock growth, tax-loss harvesting, etc.).
+These results will help the user to make a clear decision on what to invest in for their personal
+accounts on apps like Robinhood, Fidelity, Webull, etc. Side goal, this may also provide a free
+and open-source platform for stock market discovery or learning, no need to pay for tokens or
+other AI agents.
+
+\section{Project Methodology}
+
+Process:
+\begin{enumerate}
+
+\item Web scraper extracts data from historical data from YahooFinance, including historical prices, dividend payouts, stock splits, quarterly income statements, quarterly balance sheets, cash flow, and quarterly statistics such as market cap, p/e ratios, etc. This data is stored in a csv file for analysis.
+\item Analyze stock data in csv format. Gather key statistics that appear viable and trend historical data to identify growth potential. Possible ranking/scoring system for each data point.
+\item Evaluate stock data based on user strategy. Predict viable outcomes of future stock performance against historical data and key statistics. Rank/score viable stocks for investment opportunity.
+\item Process results in a digestible fashion in order for the user to make clear decisions.
+
+\end{enumerate}
+
+\section{Approach and Scope}
+
+Using Jupyter Notebook and Python, I will create a web scraper to extract historical stock data from YahooFinance. The data will be stored in a csv file for analysis, and then analyzed using some sort of machine learning algorithm,further data investigation needed, to identify trends and patterns that can help predict future stock performance. The scope of this project is limited to analyzing historical stock data and providing insights for personal investment decisions. The project will focus on providing a user-friendly output for individuals to access and interpret the data, with the goal of making stock market analysis more approachable for those without extensive financial knowledge. Minimum viable product will be an output score of single stock analysis. Future work may include analysis of all stocks in the S\&P 500 or other indexes to produce a list of top X stocks based on user strategy. Predictions may vary in accuracy and should not be taken as financial advice and should be used for educational purposes only. The project will not provide any financial advice or recommendations, and users should always consult with a financial advisor before making any investment decisions.\cite{1}
+
+\section{Results}
+
+Summary of analysis and data validation.
+
+\section{Limitations}
+
+Identify system issues and obstacles.
+Possible solutions to overcome limitations.
+Possibly any development obstacles that may have been encountered.
+
+\section{Conclusion}
+
+Reiterate goals/purpose of the project. Summarize results and findings.
+Discuss future work and possible improvements.
+
+\section*{\centering References}
+
+\cite{1} Test. Test. Test
+
+% \subsection{Goals of this Research} 
+% Specify exactly your aims of this paper. Also, write a sentence how you will address for each individual goal.
+
+% \subsection{This is another subsection}
+% Write something related to your paper.
+
+% \section{Mobile Usability}
+
+
+% \begin{table}
+% \caption{Gas Prices}\label{gasprice}
+% \begin{tabular}{|l|r|}
+% \hline
+% Month &  Price \\
+% \hline
+% Jan &  \$2.12 \\
+% Feb &  0.12 \\
+% Mar &  1.12 \\
+% Apr &  2.12 \\
+% May &  3.12 \\
+% Jun &  1.12 \\
+
+% \hline
+% \end{tabular}
+% \end{table}
+
+
+
+% \begin{table}
+% \caption{Table captions should be placed above the
+% tables.}\label{tab1}
+% \begin{tabular}{|l|l|l|}
+% \hline
+% Heading level &  Example & Font size and style\\
+% \hline
+% Title (centered) &  {\Large\bfseries Lecture Notes} & 14 point, bold\\
+% 1st-level heading &  {\large\bfseries 1 Introduction} & 12 point, bold\\
+% 2nd-level heading & {\bfseries 2.1 Printing Area} & 10 point, bold\\
+% 3rd-level heading & {\bfseries Run-in Heading in Bold.} Text follows & 10 point, bold\\
+% 4th-level heading & {\itshape Lowest Level Heading.} Text follows & 10 point, italic\\
+% \hline
+% \end{tabular}
+% \end{table}
+
+
+% The gasoline prices are summarized in Table \ref{gasprice}
+
+
+
+% \noindent Displayed equations are centered and set on a separate
+% line.
+% \begin{equation}
+% x + y = z
+% \end{equation}
+% Please try to avoid rasterized images for line-art diagrams and
+% schemas. Whenever possible, use vector graphics instead (see
+% Fig.~\ref{fig1}).
+
+% \begin{figure}
+% \includegraphics[width=\textwidth]{fig1.eps}
+% \caption{A figure caption is always placed below the illustration.
+% Please note that short captions are centered, while long ones are
+% justified by the macro package automatically.} 
+% \label{fig1}
+% \end{figure}
+
+% The detailed steps of the MEC is shown in Figure \ref{mecFig}.
+
+% \begin{figure}
+% \includegraphics[width=\textwidth]{mecomputing.png}
+% \caption{This is the MEC} 
+% \label{mecFig}
+% \end{figure}
+
+% %\begin{theorem}
+% %This is a sample theorem. The run-in heading is set in bold, while
+% %the following text appears in italics. Definitions, lemmas,
+% %propositions, and corollaries are styled the same way.
+% %\end{theorem}
+% %
+% % the environments 'definition', 'lemma', 'proposition', 'corollary',
+% % 'remark', and 'example' are defined in the LLNCS documentclass as well.
+% %
+% \begin{proof}
+% Proofs, examples, and remarks have the initial word in italics,
+% while the following text appears in normal font.
+% \end{proof}
+
+
+% The following are the items in my lunch menu.
+% \begin{itemize}
+%     \item Fish
+%     \begin{itemize}
+%         \item sauce
+%         \item fires
+%     \end{itemize}
+%     \item Chicken
+%     \item Yogurt
+%     \item ice cream
+% \end{itemize}
+
+% The following are the steps to cook this recipe. 
+
+
+
+% \begin{enumerate}
+% \item Clean vessels
+% \item Cook
+% \begin{enumerate}
+%     \item On the stove
+%     \item Place the pan
+%     \item Crack the egg
+% \end{enumerate}
+% \item Eat
+% \end{enumerate}
+
+
+
+% For citations of references, we prefer the use of square brackets
+% and consecutive numbers. \cite{bariah2020prospective}, \cite{kato2020ten}.
+
+% Now I am citing this article. \cite{hoehle2015mobile}
+
+% citing now \cite{8766917}, \cite{10.5555/2667432.2667458}
+
+% Now, I am using my sixth \cite{mao2017survey} citation.
+
+% \cite{910896}
+
+% \cite{*}
+
+%
+% ---- Bibliography ----
+%
+% BibTeX users should specify bibliography style 'splncs04'.
+% References will then be sorted and formatted in the correct style.
+%
+\bibliographystyle{splncs04}
+\bibliography{mybibliography}
+
+
+%
+
+\end{document}
+
