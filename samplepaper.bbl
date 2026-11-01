@@ -1,0 +1,12 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{YahooFinanceHelp}
+Yahoo: Financial statements on yahoo finance are changing, \url{https://help.yahoo.com/kb/finance/SLN37694.html?impressions=true}
+
+\bibitem{YahooFinance}
+Yahoo: Yahoo finance, \url{https://finance.yahoo.com/}
+
+\end{thebibliography}
