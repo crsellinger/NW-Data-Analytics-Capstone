@@ -89,6 +89,11 @@ For the income statement and cash flow data, the data is scraped from the financ
 
 The goal of collecting data in this format, is to provide a comprehensive view of a stock's financial performance over time without having to manually collect and organize the data. Not all attributes will be used the machine learning algorithm, but the user may be interested in the available information. There are several limitations in the data, mainly, the data is limited to what the unpaid version of YahooFinance provides, which is limited to 20 years of historical data for dividends, five quarters of key statistics, and four quarters of income statement and cash flow data. Additionally, the data may not be complete or accurate, as it is sourced from a third-party website and may be subject to changes or omissions. Noted on the financials tab, YahooFinance is ``moving the Financials tab to a new, more detailed dataset from Morningstar\ldots''\cite{YahooFinanceHelp} on November 9\textsuperscript{th}, 2026.
 
+% Net Income Common Stockholders / (Total Assets - Total Liabilities) *Pulled from Balance Sheet = RoE *r on DCF model
+% Linear Regression model, scikit-learn, use dates for x and free cash flow for y
+
+% Net Income Common Stockholders is net income - preferred dividends. I am using this over the raw income, in order to get a more accurate representation of the company's profitability for common shareholders. This is important because preferred shareholders have a higher claim on the company's assets and earnings, and their dividends are typically fixed, while common shareholders have a residual claim on the company's earnings and may receive variable dividends based on the company's performance. By using Net Income Common Stockholders, we can better understand how much profit is available to common shareholders after accounting for the fixed obligations to preferred shareholders. (tldr; treating preferred dividends as an expense)
+
 \section{Data Cleaning}
 
 \section{Results}
