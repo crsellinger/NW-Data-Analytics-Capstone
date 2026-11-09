@@ -99,15 +99,6 @@ The goal of collecting data in this format, is to provide a comprehensive view o
 
 \section{Data Cleaning}
 
-\section{Analysis and Evaluation}
-
-% Net Income Common Stockholders / (Total Assets - Total Liabilities) *Pulled from Balance Sheet = RoE *r on DCF model
-% Linear Regression model, scikit-learn, use dates for x and free cash flow for y
-
-% Net Income Common Stockholders is net income - preferred dividends. I am using this over the raw income, in order to get a more accurate representation of the company's profitability for common shareholders. This is important because preferred shareholders have a higher claim on the company's assets and earnings, and their dividends are typically fixed, while common shareholders have a residual claim on the company's earnings and may receive variable dividends based on the company's performance. By using Net Income Common Stockholders, we can better understand how much profit is available to common shareholders after accounting for the fixed obligations to preferred shareholders. (tldr; treating preferred dividends as an expense)
-
-\section{Modeling}
-
 The data curation process begins by extracting financial data from YahooFinance and storing the information in individual dataframes. Once the data has been extracted, a separate cleaning function is applied to each dataframe to ensure consistency, accuracy, and usability. These functions include \texttt{clean\_}\allowbreak\texttt{dividends}, \texttt{clean\_}\allowbreak\texttt{statistics}, \texttt{clean\_}\allowbreak\texttt{financials}, \texttt{clean\_}\allowbreak\texttt{cashflow}, and \texttt{clean\_}\allowbreak\texttt{balance}\allowbreak\texttt{sheet}. Each function performs several cleaning operations, such as renaming or removing unnecessary columns, replacing null or blank values, removing or modifying unwanted characters within data values, such as commas, and converting data into appropriate data types. This conversion is particularly important because much of the information retrieved from YahooFinance is initially stored in string format, which can make numerical analysis difficult. Additionally, the statistics and cash flow dataframes are transposed to improve their structure and make financial information across different time periods easier to interpret and analyze. The methods used for cleaning the data are built into the pandas and datetime libraries. Pandas methods include \texttt{.replace}, \texttt{.rename}, \texttt{.T} (for transposing a table), \texttt{.drop}, and \texttt{.reset\_index}. Datetime methods include \texttt{.now} and \texttt{.year}. After these cleaning and transformation steps are completed, each function returns a cleaned dataframe that is ready for further analysis. Finally, the cleaned dataframes are exported into individual CSV files for testing purposes, allowing the results of the data curation process to be reviewed and verified before being used in subsequent analysis.
 
 Missing data values are handled during the data cleaning process to ensure that all dataframes contain consistent and usable values for analysis. When financial data is extracted from Yahoo Finance, missing values are typically represented by a double dash \texttt{(--)}. Since this placeholder is stored as a string, it can cause issues when performing numerical calculations or analysis on columns containing multiple data types. To address this, each cleaning function replaces instances of the double dash with an integer value of zero. This ensures that missing numerical values are represented consistently and that the columns can be converted into the appropriate data types for analysis. Additionally, any columns that contain no values are removed from the dataframe entirely, as they do not provide useful information for the analysis. These steps help maintain data consistency, reduce potential errors during processing, and ensure the resulting dataframes are suitable for further financial analysis.
@@ -142,7 +133,9 @@ Dividends & A portion of a company's profits paid to shareholders. \\
 
 The Discounted Cash Flow (DCF) and Dividend Discount Model (DDM) are used to calculate the equity value of a stock based on a set of financial attributes. In this context, equity value serves as the dependent variable, as its calculated value is influenced by several independent variables, including net income common stockholders, total assets, total liabilities, operating cash flow, capital expenditures, debt issuance, debt repayment, and dividends. These financial attributes serve as independent variables because they represent individual components of a company's financial performance and position that contribute to the overall equity valuation. Although the values of these attributes may vary between companies and stocks, their combined influence determines the resulting equity value of each individual stock. By estimating the future equity value over a specified period, users can compare the projected value against the stock's current market price to help assess its potential financial risk and determine whether it aligns with their investment objectives.
 
-*Note: move these to another, more relevent section later.
+\section{Analysis and Evaluation}
+
+*Note: may move these to another, more relevent section later.
 
 \begin{equation}
 \begin{aligned}
@@ -167,6 +160,14 @@ V_0 &= \frac{div_1}{(1+r_e)^1}
 &= \sum_{t=1}^{\infty} \frac{div_t}{(1+r_e)^t}
 \end{aligned}
 \end{equation}
+
+
+% Net Income Common Stockholders / (Total Assets - Total Liabilities) *Pulled from Balance Sheet = RoE *r on DCF model
+% Linear Regression model, scikit-learn, use dates for x and free cash flow for y
+
+% Net Income Common Stockholders is net income - preferred dividends. I am using this over the raw income, in order to get a more accurate representation of the company's profitability for common shareholders. This is important because preferred shareholders have a higher claim on the company's assets and earnings, and their dividends are typically fixed, while common shareholders have a residual claim on the company's earnings and may receive variable dividends based on the company's performance. By using Net Income Common Stockholders, we can better understand how much profit is available to common shareholders after accounting for the fixed obligations to preferred shareholders. (tldr; treating preferred dividends as an expense)
+
+\section{Modeling}
 
 \section{Results}
 
