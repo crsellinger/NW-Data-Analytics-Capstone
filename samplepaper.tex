@@ -173,7 +173,7 @@ V_0 &= \frac{div_1}{{(1+r_e)}^1}
 \end{aligned}
 \end{equation}
 
-After the updated tables were implemented on Nov. 9\textsuperscript{th}, I may have to explore different models to analyze equity value as some data from previous tables is no longer captured or some additional calculations may have to be made in order to achieve a sufficient result. This was not supposed to be a business focused project and I am getting lost in the terminology used in the datasets and how it applies to the stock and/or company value.
+I also conducted testing of the Discounted Cash Flow (DCF) and Dividend Discount Model (DDM) implementations before and after Yahoo Finance updated its data providers and modified its data table structures. These changes required refactoring the existing code to maintain compatibility and ensure accurate data retrieval. Additionally, I developed and evaluated a linear regression model, assessing its performance through mean squared error (MSE), predicted values, model coefficients, intercept, and R-squared scores. These metrics were evaluated using both the training and testing datasets to assess model performance and predictive accuracy. After the updated tables were implemented on Nov. 9\textsuperscript{th}, I may have to explore different models to analyze equity value as some data from previous tables is no longer captured or some additional calculations may have to be performed in order to achieve a sufficient result.
 
 % Net Income Common Stockholders / (Total Assets - Total Liabilities) *Pulled from Balance Sheet = RoE *r on DCF model
 % Linear Regression model, scikit-learn, use dates for x and free cash flow for y
