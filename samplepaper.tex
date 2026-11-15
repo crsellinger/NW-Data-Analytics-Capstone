@@ -135,17 +135,29 @@ The Discounted Cash Flow (DCF) and Dividend Discount Model (DDM) are used to cal
 
 \section{Analysis and Evaluation}
 
-*Note: may move these to another, more relevant section later.
+Exploratory Data Analysis (EDA) is the process of examining and analyzing datasets to identify key characteristics, detect outliers, uncover patterns and relationships, and evaluate underlying assumptions. The goal is to develop a deeper understanding of the data and its relevance to the problem or research question being addressed. EDA is essential in the analytical process because it helps guide decision-making, identify meaningful questions, and determine the appropriate direction for further investigation. Much like following a trail of breadcrumbs, each insight gained through exploration helps lead toward a clearer understanding of the problem and a potential solution.
+
+In EDA, various techniques are employed to visualize and summarize the data, including descriptive statistics, data visualization, and correlation analysis. Descriptive statistics provide a summary of the data's central tendency, dispersion, and distribution, while data visualization techniques such as histograms, scatter plots, and box plots help reveal patterns and relationships that may not be immediately apparent from raw data. Correlation analysis is used to assess the strength and direction of relationships between variables, which can inform the selection of features for predictive modeling.
+
+For this project, multivariate analysis was used to evaluate the relationships between multiple financial attributes and their impact on the equity value of a stock. The cashflow and balance sheet datasets were transposed in order to analyze a chronological view of the data, allowing for a more comprehensive understanding of how these attributes change over time and a linear regression model was used to predict future values based on historical trends. See figure~\ref{fig:DDM_model} on page~\pageref{fig:DDM_model} for an example of the DDM model tested using data on Verzion (stock ticker: VZ). The R-squared value of the linear regression model is 0.98352, indicating a strong correlation between the independent variables and the dependent variable. This suggests that the model is effective in capturing the underlying relationships within the data and can provide valuable insights for predicting future stock performance.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/figure1.png}
+    \caption{Scatter plot of data from dividend\_data.csv, straight line for average dividends, and linear regression model for predicted dividends.}\label{fig:DDM_model}
+\end{figure}
+
+The following equations represent the Discounted Cash Flow (DCF)~\cite{HarvardBusinessSchool} and Dividend Discount Model (DDM)~\cite{HarvardBusinessSchool2} used to calculate the equity value of a stock based on the financial attributes mentioned earlier. In both models, the equity value is calculated as the present value of future cash flows or dividends, discounted at the required rate of return for equity investors.
 
 \begin{equation}
 \begin{aligned}
 &\textbf{Discounted Cash Flow (DCF) Model} \\[0.5em]
 \text{Equity Value} &= \text{Present Value of Future Free Cash Flow to Equity} \\[1em]
-    V_0 &= \frac{FCF_1^e}{(1+r_e)^1}
-        + \frac{FCF_2^e}{(1+r_e)^2}
-        + \frac{FCF_3^e}{(1+r_e)^3}
+    V_0 &= \frac{FCF_1^e}{{(1+r_e)}^1}
+        + \frac{FCF_2^e}{{(1+r_e)}^2}
+        + \frac{FCF_3^e}{{(1+r_e)}^3}
         + \cdots \\[1em]
-    &= \sum_{t=1}^{\infty} \frac{FCF_t^e}{(1+r_e)^t}
+    &= \sum_{t=1}^{\infty} \frac{FCF_t^e}{{(1+r_e)}^t}
 \end{aligned}
 \end{equation}
 
@@ -153,14 +165,15 @@ The Discounted Cash Flow (DCF) and Dividend Discount Model (DDM) are used to cal
 \begin{aligned}
 &\textbf{Dividend Discount Model (DDM)} \\[0.5em]
 \text{Equity Value} &= \text{Present Value of Expected Future Dividends} \\[1em]
-V_0 &= \frac{div_1}{(1+r_e)^1}
-     + \frac{div_2}{(1+r_e)^2}
-     + \frac{div_3}{(1+r_e)^3}
+V_0 &= \frac{div_1}{{(1+r_e)}^1}
+     + \frac{div_2}{{(1+r_e)}^2}
+     + \frac{div_3}{{(1+r_e)}^3}
      + \cdots \\[1em]
-&= \sum_{t=1}^{\infty} \frac{div_t}{(1+r_e)^t}
+&= \sum_{t=1}^{\infty} \frac{div_t}{{(1+r_e)}^t}
 \end{aligned}
 \end{equation}
 
+After the updated tables were implemented on Nov. 9\textsuperscript{th}, I may have to explore different models to analyze equity value as some data from previous tables is no longer captured or some additional calculations may have to be made in order to achieve a sufficient result. This was not supposed to be a business focused project and I am getting lost in the terminology used in the datasets and how it applies to the stock and/or company value.
 
 % Net Income Common Stockholders / (Total Assets - Total Liabilities) *Pulled from Balance Sheet = RoE *r on DCF model
 % Linear Regression model, scikit-learn, use dates for x and free cash flow for y
@@ -183,7 +196,7 @@ Possibly any development obstacles that may have been encountered.
 
 Reiterate goals/purpose of the project. Summarize results and findings.
 Discuss future work and possible improvements.
-
+    
 \bibliographystyle{splncs04}
 \bibliography{mybibliography}
 

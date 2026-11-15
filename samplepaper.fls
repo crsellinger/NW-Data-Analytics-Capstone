@@ -97,6 +97,11 @@ INPUT c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
 INPUT c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT c:/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
 INPUT c:/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT ./images/figure1.png
+INPUT ./images/figure1.png
+INPUT ./images/figure1.png
+INPUT ./images/figure1.png
+INPUT ./images/figure1.png
 INPUT c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
 INPUT c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm

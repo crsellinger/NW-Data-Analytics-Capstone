@@ -3,10 +3,16 @@
 \providecommand{\urlprefix}{URL }
 \providecommand{\doi}[1]{https://doi.org/#1}
 
+\bibitem{HarvardBusinessSchool}
+School, H.B.: Discounted cash flow (dcf) formula: What it is \& how to use it. \url{https://online.hbs.edu/blog/post/discounted-cash-flow}
+
+\bibitem{HarvardBusinessSchool2}
+School, H.B.: Discounted dividend model (ddm): What it is \& how to use it. \url{https://online.hbs.edu/blog/post/discounted-dividend-model}
+
 \bibitem{YahooFinanceHelp}
-Yahoo: Financial statements on yahoo finance are changing, \url{https://help.yahoo.com/kb/finance/SLN37694.html?impressions=true}
+Yahoo: Financial statements on yahoo finance are changing. \url{https://help.yahoo.com/kb/finance/SLN37694.html?impressions=true}
 
 \bibitem{YahooFinance}
-Yahoo: Yahoo finance, \url{https://finance.yahoo.com/}
+Yahoo: Yahoo finance. \url{https://finance.yahoo.com/}
 
 \end{thebibliography}
