@@ -4,6 +4,7 @@
 %
 \documentclass[runningheads]{llncs}
 %
+\usepackage{placeins}
 \usepackage{graphicx}
 % Used for displaying a sample figure. If possible, figure files should
 % be included in EPS format.
@@ -20,8 +21,13 @@
 \usepackage{amsmath}
 % Used for mathematical equations in the "Data Cleaning" section.
 
-\userpackage{hyperref}
+\usepackage{hyperref}
 % Used for hyperlinks
+
+% Allow pages to end naturally instead of stretching vertical whitespace
+% when floats or section breaks prevent TeX from filling a page.
+\raggedbottom{}
+\setlength{\emergencystretch}{3em}
 
 \begin{document}
 %
@@ -174,11 +180,38 @@ I also conducted testing of the Discounted Cash Flow (DCF) and Dividend Discount
 
 \section{Modeling}
 
-Code can be found at \href{https://github.com/crsellinger/NW-Data-Analytics-Capstone}~\cite{GitHub}
+For the ML pipeline, data is collected via the webscraper and stored in a csv file. The data is then cleaned and transformed into a usable format for analysis as described in the Data Cleaning section. As there is limited data, the entirety of the cleaned data is then used to train each model, which is evaluated using metrics such as mean squared error (MSE), predicted values, model coefficients, and R-squared scores. Equity values are predicted for a future 10 year outlook and graphed for visual acuity. It is deployed locally and each run is monitored using r-squared values and mean absolute value (MAE).
+
+I  evaluated two machine learning approaches—a linear regression model and a decision tree model—for the Discounted Cash Flow (DCF) valuation model, while separately developing and testing a linear regression model for the Dividend Discount Model (DDM). Preliminary testing indicates that the linear regression model for the DDM provides the strongest fit, achieving an average R-squared value of 0.983 across a sample of 10 dividend-paying stocks. This result suggests that the model demonstrates a high degree of explanatory power and is performing well based on the initial dataset as a score of 1 would show that all predicted values were calculated perfectly. Following the updated tables on November 9, I have continued evaluating the DCF model using the newly provided data. I have used a Decision Tree Regressor model in combination with the Linear Regression model in an ensemble to constrain more recent future predictions. In Figure~\ref{fig:Decision Tree plus Linear Regressors}, you can see a slight curve tested on stock ticker VZ.\@
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/figure2.png}
+    \caption{Future Equity Value Predictions with Ensemble.}\label{fig:Decision Tree plus Linear Regressors}
+\end{figure}
+
+The weighted values for the decicion tree are heavier at the beginning, lowering the prediction values. This is used to give the user a more reasonable future outlook for earlier predictions.
+
+Code can be found on GitHub at~\href{https://github.com/crsellinger/NW-Data-Analytics-Capstone}{NW Data Analytics Capstone}~\cite{GitHub}.
 
 \section{Results}
 
-Summary of analysis and data validation.
+Summary of analysis and data validation.\ref{fig:Linear Regression model for DDM model}~\ref{fig: Linear Regression model for DCF}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/figure3.png}
+    \caption{Future Dividend Predictions.}\label{fig:Linear Regression model for DDM model}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/figure4.png}
+    \caption{Future Equity Value Predictions using only Linear Regressor.}\label{fig: Linear Regression model for DCF}
+\end{figure}
+\FloatBarrier{}
+
+The figures above show the outlook for the next 10 years using only the Linear Regression models.
 
 \section{Limitations}
 
