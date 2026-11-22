@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex samplepaper"] 1795378423.76785 "samplepaper.aux" "samplepaper.bbl" "samplepaper" 1795378445.14608 0
+["bibtex samplepaper"] 1795389535.97906 "samplepaper.aux" "samplepaper.bbl" "samplepaper" 1795390422.55139 0
   "./mybibliography.bib" 1795373470 1376 d173ae7b7bdb5be8dc8cf9f0d59e4744 ""
   "./splncs04.bst" 1793559049 32146 ee21ae2a29028dc8ad842a97200982c7 ""
-  "samplepaper.aux" 1795378444 3376 dfee5e48d8e780f657564e39f4939ef2 "pdflatex"
+  "samplepaper.aux" 1795390421 3614 1c3cde44986121729c1619761d23661d "pdflatex"
   (generated)
   "samplepaper.bbl"
   "samplepaper.blg"
   (rewritten before read)
-["pdflatex"] 1795378443.55197 "c:/Users/caleb/Documents/School/CS44688/NW-Data-Analytics-Capstone/samplepaper.tex" "samplepaper.pdf" "samplepaper" 1795378445.14653 0
-  "c:/Users/caleb/Documents/School/CS44688/NW-Data-Analytics-Capstone/samplepaper.tex" 1795378442 26996 491d4d15b9cdd0cc370f1fa1ba39b601 ""
+["pdflatex"] 1795390420.90563 "c:/Users/caleb/Documents/School/CS44688/NW-Data-Analytics-Capstone/samplepaper.tex" "samplepaper.pdf" "samplepaper" 1795390422.55182 0
+  "c:/Users/caleb/Documents/School/CS44688/NW-Data-Analytics-Capstone/samplepaper.tex" 1795390420 28474 48e06d778e7eb74e2941511ff9fca770 ""
   "c:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1792879002 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1792879211 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/jknappen/ec/tcrm0900.tfm" 1792879124 1536 c4f439db76ef96a9c53bc437f35ffe20 ""
@@ -97,11 +97,12 @@
   "images/figure2.png" 1795375817 34112 9db4088b86557fe7daa259065b1d093e ""
   "images/figure3.png" 1795377932 31051 c16dfc92be35a109bb90bfda8476c369 ""
   "images/figure4.png" 1795377940 35394 972027e6f598ea1932ec59a111e2a8cf ""
+  "images/figure5.png" 1795389108 40948 7ba26121dd72021c0b7153c76265d461 ""
   "llncs.cls" 1793559072 42249 b08ec23e994470d7d8fc268d245cf555 ""
-  "samplepaper.aux" 1795378444 3376 dfee5e48d8e780f657564e39f4939ef2 "pdflatex"
-  "samplepaper.bbl" 1795378424 876 1d1389c037855e002976fa29c99efdc6 "bibtex samplepaper"
-  "samplepaper.out" 1795378444 402 41f64f7267cbb9e72b063e9e000bf490 "pdflatex"
-  "samplepaper.tex" 1795378442 26996 491d4d15b9cdd0cc370f1fa1ba39b601 ""
+  "samplepaper.aux" 1795390421 3614 1c3cde44986121729c1619761d23661d "pdflatex"
+  "samplepaper.bbl" 1795389536 876 1d1389c037855e002976fa29c99efdc6 "bibtex samplepaper"
+  "samplepaper.out" 1795390421 402 41f64f7267cbb9e72b063e9e000bf490 "pdflatex"
+  "samplepaper.tex" 1795390420 28474 48e06d778e7eb74e2941511ff9fca770 ""
   (generated)
   "samplepaper.aux"
   "samplepaper.log"

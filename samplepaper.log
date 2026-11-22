@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.24)  22 NOV 2026 14:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.24)  22 NOV 2026 17:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -439,24 +439,29 @@ File: images/figure1.png Graphic file (type png)
 <use images/figure1.png>
 Package pdftex.def Info: images/figure1.png  used on input line 144.
 (pdftex.def)             Requested size: 277.69987pt x 202.70663pt.
- [5] [6 <./images/figure1.png>]
-<images/figure2.png, id=81, 496.4949pt x 308.5929pt>
+ [5] [6 <./images/figure1.png>] [7]
+<images/figure5.png, id=88, 422.7795pt x 308.5929pt>
+File: images/figure5.png Graphic file (type png)
+<use images/figure5.png>
+Package pdftex.def Info: images/figure5.png  used on input line 195.
+(pdftex.def)             Requested size: 277.69987pt x 202.70663pt.
+<images/figure2.png, id=90, 496.4949pt x 308.5929pt>
 File: images/figure2.png Graphic file (type png)
 <use images/figure2.png>
-Package pdftex.def Info: images/figure2.png  used on input line 189.
+Package pdftex.def Info: images/figure2.png  used on input line 204.
 (pdftex.def)             Requested size: 277.69987pt x 172.60835pt.
- [7]
-<images/figure3.png, id=94, 422.7795pt x 308.5929pt>
+ [8 <./images/figure5.png>]
+<images/figure3.png, id=103, 422.7795pt x 308.5929pt>
 File: images/figure3.png Graphic file (type png)
 <use images/figure3.png>
-Package pdftex.def Info: images/figure3.png  used on input line 203.
+Package pdftex.def Info: images/figure3.png  used on input line 219.
 (pdftex.def)             Requested size: 277.69987pt x 202.70663pt.
-<images/figure4.png, id=95, 480.5955pt x 308.5929pt>
+<images/figure4.png, id=104, 480.5955pt x 308.5929pt>
 File: images/figure4.png Graphic file (type png)
 <use images/figure4.png>
-Package pdftex.def Info: images/figure4.png  used on input line 209.
+Package pdftex.def Info: images/figure4.png  used on input line 225.
 (pdftex.def)             Requested size: 277.69987pt x 178.31064pt.
- [8 <./images/figure2.png>] [9 <./images/figure3.png> <./images/figure4.png>] [10] (./samplepaper.bbl) [11] (./samplepaper.aux)
+ [9 <./images/figure2.png>] [10 <./images/figure3.png> <./images/figure4.png>] [11] (./samplepaper.bbl) [12] (./samplepaper.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-09-09>
@@ -465,18 +470,18 @@ Package rerunfilecheck Info: File `samplepaper.out' has not changed.
 (rerunfilecheck)             Checksum: 41F64F7267CBB9E72B063E9E000BF490;402.
  ) 
 Here is how much of TeX's memory you used:
- 9997 strings out of 467050
- 153206 string characters out of 5410543
- 593316 words of memory out of 5000000
- 39227 multiletter control sequences out of 15000+600000
+ 10007 strings out of 467050
+ 153425 string characters out of 5410543
+ 593370 words of memory out of 5000000
+ 39235 multiletter control sequences out of 15000+600000
  634335 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,9n,79p,1952b,555s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb>
-Output written on samplepaper.pdf (11 pages, 309688 bytes).
+Output written on samplepaper.pdf (12 pages, 344241 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
- 29 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 213 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 34 words of extra memory for PDF output out of 10000 (max. 10000000)
 
